@@ -1,0 +1,13 @@
+<h1>Products</h1>
+
+<ul>
+	<% @products.each do |product| %>
+	<li> <%= link_to product.name, product %></li>
+	<% end %>
+</ul>
+
+<!-- the first product tells us where to take the name. -->
+<!-- the second product tells us where to go -->
+
+<%= link_to "Create a New Product", new_product_path %><br>
+<%= link_to "Create a New Account", new_user_path %>
